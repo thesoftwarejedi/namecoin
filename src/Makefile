@@ -11,12 +11,14 @@ DEFS += -DBOOST_THREAD_USE_LIB
 INCLUDEPATHS= \
 	-I../libs/openssl-1.0.1i/include \
 	-I../libs/db-4.7.25.NC/build_unix \
-	-I../libs/boost_1_50_0
+	-I../libs/boost_1_50_0 \
+	-I/usr/local/BerkeleyDB.4.8/include
 
 LIBPATHS= \
 	-L../libs/openssl-1.0.1i \
 	-L../libs/db-4.7.25.NC/build_unix \
-	-L../libs/boost_1_50_0/stage/lib
+	-L../libs/boost_1_50_0/stage/lib \
+	-L/usr/local/BerkeleyDB.4.8/lib
 
 LIBBOOST_SUFFIX=
 
